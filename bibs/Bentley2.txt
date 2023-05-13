@@ -1,0 +1,7 @@
+@article{wang2016determining,
+  title={Determining Key Factors in Consumer Evaluation of an Airport},
+  author={Wang, Xiao and Hong, Mengnan},
+  journal={International journal of trends in marketing management},
+  number={2},
+  year={2016}
+}

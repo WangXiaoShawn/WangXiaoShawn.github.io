@@ -1,0 +1,9 @@
+@article{wang2015customer,
+  title={Customer-satisfaction analysis at San Francisco international airport},
+  author={Wang, Xiao and Hong, Mengnan and Berger, Paul D},
+  journal={International Journal of Management Studies},
+  volume={2},
+  number={1},
+  pages={1--12},
+  year={2015}
+}

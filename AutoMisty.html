@@ -22,30 +22,29 @@
 </div>
 
 <h3 style="text-align: left; margin-top: 40px;">Abstract</h3>
-<p style="text-align:justify; font-size: 18px; line-height: 1.3; max-width: 900px; margin: auto;"> The social robot’s open API allows users to
+<p style="text-align:justify; font-size: 18px; line-height: 1.3; max-width: 900px; margin: auto;"> 
+        The social robot’s open API allows users to
     customize open-domain interactions. However, it remains
-    inaccessible to those without programming experience.
-    In this work, we introduce AutoMisty, the first multiagent collaboration framework powered by large language
-    models (LLMs), enabling the seamless generation of executable Misty robot code from natural language instructions. AutoMisty manages task decomposition, assignment,
-    problem-solving, and result synthesis through four specialized agent modules. The Planner Agent formulates
-    action plans, determines execution sequences, and assigns
-    tasks to the appropriate agents. The Action, Touch, and
-    Audiovisual Agents further refine actions and generate
-    high-quality executable code. To enhance code reliability
-    and structure, we optimize the original APIs to improve
-    their interpretability for LLMs. Additionally, each agent
-    incorporates a two-layer optimization mechanism: self-reflection for iterative refinement and human-in-the-loop
-    for better alignment with user preferences. AutoMisty
-    ensures a transparent reasoning process, allowing users to
-    iteratively refine tasks through natural language feedback
-    for precise execution. To evaluate AutoMisty’s effectiveness,
+    inaccessible to those without programming experience. We
+    introduce AutoMisty, the first LLM-powered multi-agent
+    framework that converts natural-language commands into
+    executable Misty robot code by decomposing high-level
+    instructions, generating sub-task code, and integrating
+    everything into a deployable program. Each agent employs
+    a two-layer optimization mechanism: first, a self-reflective
+    loop that instantly validates and automatically executes
+    the generated code, regenerating whenever errors emerge;
+    second, human review for refinement and final approval,
+    ensuring alignment with user preferences and preventing
+    error propagation. To evaluate AutoMisty’s effectiveness,
     we designed a benchmark task set spanning four levels
     of complexity and conducted experiments in a real Misty
     robot environment. Extensive evaluations demonstrate that
     AutoMisty not only consistently generates high-quality
     code but also enables precise code control, significantly
     outperforming direct reasoning with ChatGPT-4o and
-    ChatGPT-o1. </p>
+    ChatGPT-o1. 
+ </p>
 
 <!-- Method Section -->
 <h3 style="text-align: left; margin-top: 40px;">Method</h3>
@@ -60,7 +59,7 @@
 </div>
 
 <h4 style="text-align: left; margin-left: 20px;"> Type: Conference Paper</h4>
-<h4 style="text-align: left; margin-left: 20px;"> International Conference on Intelligent Robots and Systems (<strong>IROS2025 under review</strong>) </h4>
+<h4 style="text-align: left; margin-left: 20px;"> International Conference on Intelligent Robots and Systems (<strong>IROS2025</strong>) </h4>
 
 <hr>
 <table cellpadding="0px">

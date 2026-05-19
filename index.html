@@ -41,6 +41,9 @@
 	.img-contain {background-size: contain !important;}
 	.footer {background-color: #345; width: 100%}
 	.footer-content {color: #fff; font-size: 10px; padding: 6px 0; max-width: 900px; margin: auto;}
+	.news-container {height: 200px; overflow-y: auto; overflow-x: hidden;}
+	.news-list {box-sizing: border-box; max-width: 100%; padding-right: 12px;}
+	.news-list li {overflow-wrap: anywhere; word-break: normal;}
 
 
 
@@ -114,13 +117,11 @@
 
 
 <h2>News [<img src="./index_files//update.gif">]</h2>
-	<div  style="overflow-y: scroll; height:200px;">
-	<table border="1" style="border-width: 0px;" width="1050">
-	<tbody>
-	<tr>
-	<td style="border-style: none; border-width: medium;">
-	<ul>
-		<li type="circle">2026.03: Two papers in AI for Education, <strong>"InterventionLens"</strong> and <strong>"ConfusionBench,"</strong> were accepted to the Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026).</li>
+	<div class="news-container">
+	<ul class="news-list">
+		<li type="circle">2026.05: Joined <strong>ByteDance/TikTok</strong> as a <strong>Research Scientist Intern</strong> for Summer 2026.</li>
+		<li type="circle">2026.05: Successfully passed the <strong>Qualification Exam</strong> and officially became a <strong>Ph.D. Candidate</strong>.</li>
+		<li type="circle">2026.03: Two AI for Education papers, <strong>"InterventionLens"</strong> and <strong>"ConfusionBench,"</strong> were accepted to <strong>CVPR CV4Edu Workshop 2026</strong>.</li>
 		<li type="circle">2025.6: Our paper, <strong>AutoMisty: A Multi-Agent LLM Framework for Automated Code Generation in the Misty Social Robot</strong>, has been accepted for presentation at <strong>IROS 2025</strong>.</li>
 		<li type="circle">2025.05: Started my summer research intern journey at <strong>Microsoft MSAI PhD Research Interns</strong> at <strong>Reasoning and LU Group</strong>.</li>
 		<li type="circle">2024.09: Our paper, <strong>ProxyFusion: FaceFeature Aggregation Through Sparse Experts</strong>, has been accepted for presentation at <strong>NeurIPS 2024</strong>.</li>
@@ -137,12 +138,25 @@
 		<li type="circle">2021.08: Started my Master's journey at <strong> Syracuse University</strong>, Syracuse, NY.</li>
 		
 		
-	</ul><br>
-	</td>
-	</tr>
-	</tbody>
-	</table>
+	</ul>
 	</div>
+
+<h2>Experience</h2>
+  <ul>
+	<li type="disc">
+		<strong>Research Scientist Intern</strong>, ByteDance/TikTok, May 2026 - Aug 2026.
+  </ul>	
+
+  <ul>
+	<li type="disc">
+		<strong>Research Intern</strong>  MSAI Reasoning and LU Group, Microsoft, May 2025- Aug 2025.
+  </ul>	
+
+  <ul>
+	<li type="disc">
+		<strong>Research Assistant</strong>, National AI Institute for Exceptional Education, University at Buffalo, SUNY (UB), Sep 2024 – Present
+		
+  </ul>	
 
 <h2>Selected Research</h2>
 <div class="publication row clearfix">
@@ -163,7 +177,7 @@
 	<div class="row-text">
 		<a href="InterventionLens.html" target="_blank"><strong>InterventionLens: A Multi-Agent Framework for Detecting ASD Intervention Strategies in Parent-Child Shared Reading</strong><br/></a>
 		<strong>Xiao Wang*</strong>, Lu Dong*, Ifeoma Nwogu, Srirangaraj Setlur, Venu Govindaraju<br/>
-		<span class="italic">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (<strong>CVPR 2026</strong>)</span><br/>
+		<span class="italic">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (<strong>CVPRw 2026</strong>)</span><br/>
 		<a class="btn btn-orange" href="https://arxiv.org/pdf/2603.13710" target="_blank">arXiv</a>
 		<a class="btn btn-red" href="https://arxiv.org/pdf/2603.13710" target="_blank">PDF</a>
 		<a class="btn" href="InterventionLens.html" target="_blank">BibTeX</a>
@@ -176,7 +190,7 @@
 	<div class="row-text">
 		<a href="https://dongludeeplearning.github.io/ConfusionBench.html" target="_blank"><strong>ConfusionBench: An Expert-Validated Benchmark for Confusion Recognition and Localization in Educational Videos</strong><br/></a>
 		<strong>Xiao Wang*</strong>, Lu Dong*, Mark G Frank, Srirangaraj Setlur, Venu Govindaraju, Ifeoma Nwogu<br/>
-		<span class="italic">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (<strong>CVPR 2026</strong>)</span><br/>
+		<span class="italic">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (<strong>CVPRw 2026</strong>)</span><br/>
 		<a class="btn btn-orange" href=" ">DOI</a>
 		<a class="btn btn-red" href="https://arxiv.org/pdf/2603.17267" target="_blank">PDF</a>
 		<a class="btn" href="https://dongludeeplearning.github.io/ConfusionBench.html" target="_blank">BibTeX</a>
@@ -189,7 +203,7 @@
 	<div class="row-text">
 		<a href="https://dongludeeplearning.github.io/Ig3D.html" target="_blank"><strong>Ig3D: Integrating 3D Face Representations in Facial Expression Inference</strong><br/></a>
 		<strong>Xiao Wang*</strong>, Lu Dong*, Srirangaraj Setlur, Venu Govindaraju, Ifeoma Nwogu<br/>
-		<span class="italic">Proceedings of the 18th European Conference on Computer Vision (<strong>ECCV 2024</strong>)</span><br/>
+		<span class="italic">Proceedings of the 18th European Conference on Computer Vision (<strong>ECCVw 2024</strong>)</span><br/>
 		<a class="btn btn-orange" href=" ">DOI</a>
 		<a class="btn btn-red" href=" ">PDF</a>
 		<a class="btn" href=" ">BibTeX</a>
@@ -237,24 +251,11 @@
 </div>
 
 
-<h2>Experience</h2>
-  <ul>
-	<li type="disc">
-		<strong>Research Intern</strong>  MSAI Reasoning and LU Group, Microsoft, May 2025- Aug 2025.
-  </ul>	
-
-  <ul>
-	<li type="disc">
-		<strong>Research Assistant</strong>, National AI Institute for Exceptional Education, University at Buffalo, SUNY (UB), Sep 2024 – Present
-		
-  </ul>	
-
-
-<h2>Academic Services</h2>
+<!-- <h2>Academic Services</h2>
      <h3>Journal  Reviewer</h3>
    <ul>
  	  <li type="disc">IEEE Transactions on Artificial Intelligence. </a></li>
-   </ul>
+   </ul> -->
 
 <h2>Highlighted Projects</h2>
 

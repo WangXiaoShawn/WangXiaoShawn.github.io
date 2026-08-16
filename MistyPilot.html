@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="MistyPilot: Enabling Social-Robot Control through Multi-Agent LLM Skill Orchestration">
-  <meta name="keywords" content="MistyPilot, LLM, Multi-Agent, Social Robot, Misty, Skill Orchestration">
+        content="MistyPilot: Enabling Social-Robot Control through Multi-Agent LLM Skill Orchestration. ACVR Workshop @ ECCV 2026 (Oral & Poster).">
+  <meta name="keywords" content="MistyPilot, LLM, Multi-Agent, Social Robot, Misty, Skill Orchestration, ECCV 2026, ACVR">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MistyPilot: Enabling Social-Robot Control through Multi-Agent LLM Skill Orchestration</title>
 
@@ -39,13 +39,35 @@
     .publication-links .button {
       margin: 0 4px;
     }
-    /* Placeholder links: visibly inert until the paper, arXiv entry and code are out. */
-    .publication-links .button.is-static {
-      pointer-events: none;
-      cursor: default;
-    }
     .author-note {
       color: #7a7a7a;
+    }
+    /* Acceptance banner, mirroring the GitHub README. */
+    .accept-banner {
+      display: inline-block;
+      margin: 14px auto 4px;
+      padding: 10px 18px;
+      border-radius: 10px;
+      background: #fff8e6;
+      border: 1px solid #f5d98b;
+      color: #5c4a00;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .accept-banner a {
+      color: #b06d00;
+      font-weight: 600;
+    }
+    .accept-banner .venue-detail {
+      display: block;
+      font-size: 14px;
+      color: #7a6a30;
+    }
+    .figure-caption {
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+      text-align: justify;
     }
   </style>
 </head>
@@ -77,41 +99,39 @@
             <span class="author-block">State University of New York at Buffalo</span>
           </div>
 
-          <div class="is-size-5 publication-authors" style="margin-top: 8px;">
-            <span class="author-block"><b>Assistive Computer Vision and Robotics (ACVR) Workshop @ ECCV 2026</b></span>
-          </div>
-
           <div class="is-size-7 author-note" style="margin-top: 6px;">
             <sup>*</sup> Equal contribution.
           </div>
 
+          <div class="accept-banner">
+            🎉 Accepted at <a href="https://iplab.dmi.unict.it/acvr2026/" target="_blank">ACVR 2026</a>
+            (ECCV 2026 Workshop) — <strong>Oral &amp; Poster</strong>
+            <span class="venue-detail">
+              14th International Workshop on Assistive Computer Vision and Robotics, in conjunction with ECCV 2026 ·
+              Malmö, Sweden · September 8, 2026
+            </span>
+          </div>
+
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- Paper Link. Swap is-static for is-dark and add the href once published. -->
+              <!-- Paper Link (camera-ready PDF hosted on this site). -->
               <span class="link-block">
-                <a class="button is-normal is-rounded is-static">
+                <a href="./files/MistyPilot_ECCV2026.pdf" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Paper (Coming Soon)</span>
-                </a>
-              </span>
-              <!-- arXiv Link. -->
-              <span class="link-block">
-                <a class="button is-normal is-rounded is-static">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv (Coming Soon)</span>
+                  <span>Paper</span>
                 </a>
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a class="button is-normal is-rounded is-static">
+                <a href="https://github.com/WangXiaoShawn/MistyPilot" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code (Coming Soon)</span>
+                  <span>Code</span>
                 </a>
               </span>
             </div>
@@ -124,15 +144,6 @@
 </section>
 
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="./files/pubs/MistyPilot.svg" alt="MistyPilot Overview" style="width:90%; height:auto; margin-left:5%">
-      <h2 class="subtitle has-text-centered" style="font-size:16px">
-      </h2>
-    </div>
-  </div>
-</section>
 
 
 <section class="section">
@@ -143,25 +154,63 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p style="text-align:justify;">
-            Abstract coming soon.
+            Programming small social robots from natural-language instructions requires more than invoking isolated APIs.
+            Interactive tasks combine reactive physical behaviors with stateful social behaviors, while existing interfaces
+            often require developers to manually compose APIs into skills, configure their parameters, bind sensor events
+            to skills, and manage task states at runtime. We present MistyPilot, a multi-agent LLM framework that interprets
+            high-level natural-language instructions and orchestrates the corresponding skills on the Misty social robot.
+            A Task Router dispatches each instruction to one of two specialized agents: a Physically Interactive Agent for
+            sensor-triggered robot control and direct skill invocation, and a Social Interaction Agent for dialogue-oriented
+            task-state management and context-dependent multimodal response generation. To improve efficiency, the Social
+            Interaction Agent reuses previously generated results when applicable and invokes full generation otherwise.
+            We evaluate MistyPilot on five component-level suites, with sensor bindings and skill invocations executed on
+            the physical Misty robot, and a preliminary user study with 12 participants. MistyPilot attains high accuracy
+            on routing, sensor-skill binding, task-state parsing, result reuse, and skill extension up to 100 skills, and
+            lower variance than an otherwise identical single-agent baseline, while participants report positive
+            perceptions of usability and interaction quality.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
 
+
+    <!-- Framework. -->
+    <div class="columns is-centered has-text-centered" style="margin-top: 2rem;">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Framework</h2>
+        <img src="./files/pubs/MistyPilot_Framework.png" alt="MistyPilot Framework" style="width:100%; height:auto;">
+        <p class="figure-caption">
+          <strong>Overview of the MistyPilot framework.</strong>
+          A <em>Task Router</em> dispatches each instruction to the <em>Physically Interactive Agent (PIA)</em> for
+          sensor-skill binding and skill invocation, or to the <em>Social Interaction Agent (SIA)</em> for dialogue.
+          The PIA supports direct skill invocation, persistent sensor-skill bindings across sessions, and runtime
+          integration of new skills from their docstrings alone. The SIA tracks task state with an explicit, editable
+          Task State Manager and responds through a fast path that reuses stored results, or a slow path that generates
+          emotion-conditioned multimodal output across speech, motion, and facial cues.
+        </p>
+      </div>
+    </div>
+    <!--/ Framework. -->
+
+
+
   </div>
 </section>
 
 
-<section class="section" id="BibTeX">
+
+
+<section class="section" style="padding-top: 0;">
   <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{wang2026mistypilot,
-  title  = {MistyPilot: Enabling Social-Robot Control through Multi-Agent LLM Skill Orchestration},
-  author = {Wang, Xiao and Dong, Lu and Nwogu, Ifeoma and Setlur, Srirangaraj and Govindaraju, Venu},
-  year   = {2026}
-}</code></pre>
+    <h2 class="title is-4">Acknowledgment</h2>
+    <p style="font-size: 14px; color: #555; text-align: justify;">
+      This material is based upon work supported under the AI Research Institutes program by the U.S. National Science
+      Foundation and the Institute of Education Sciences, U.S. Department of Education, through Award #2229873 —
+      National AI Institute for Exceptional Education. Any opinions, findings and conclusions, or recommendations
+      expressed in this material are those of the author(s) and do not necessarily reflect the views of the National
+      Science Foundation, the Institute of Education Sciences, or the U.S. Department of Education.
+    </p>
   </div>
 </section>
 

@@ -1,7 +1,7 @@
 # MistyPilot Placeholder Project Page — Design
 
 **Date:** 2026-08-05
-**Status:** Approved
+**Status:** Superseded on 2026-08-15 — `MistyPilot.html` is now the full project page (camera-ready PDF, GitHub code link, ACVR@ECCV 2026 Oral & Poster banner, framework figure, highlights table); `MistyPilot.svg` was replaced by `MistyPilot.png`.
 
 ## Goal
 

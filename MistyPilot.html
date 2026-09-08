@@ -63,6 +63,22 @@
       font-size: 14px;
       color: #7a6a30;
     }
+    /* Responsive 16:9 YouTube embed. */
+    .publication-video {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .publication-video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   </style>
 </head>
 <body>
@@ -118,6 +134,26 @@
                   <span>Paper</span>
                 </a>
               </span>
+              <!-- Slides Link (ACVR oral). -->
+              <span class="link-block">
+                <a href="./files/MistyPilot_ECCV2026_Slides.pdf" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Slides</span>
+                </a>
+              </span>
+              <!-- Poster Link. -->
+              <span class="link-block">
+                <a href="./files/MistyPilot_ECCV2026_Poster.pdf" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Poster</span>
+                </a>
+              </span>
               <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/WangXiaoShawn/MistyPilot" target="_blank"
@@ -143,7 +179,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="./files/pubs/MistyPilot_Framework.png" alt="MistyPilot Overview" style="width:90%; height:auto; margin-left:5%">
+      <img src="./assets/img/pubs/MistyPilot_Framework.png" alt="MistyPilot Overview" style="width:90%; height:auto; margin-left:5%">
       <h2 class="subtitle has-text-centered" style="font-size:16px">
       </h2>
     </div>
@@ -184,19 +220,14 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video Demo</h2>
-        <a href="https://youtu.be/TKOrkjfdIXg" target="_blank"
-           style="display:block; position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:10px; background:#000; text-decoration:none;">
-          <img src="https://img.youtube.com/vi/TKOrkjfdIXg/maxresdefault.jpg"
-               onerror="this.src='https://img.youtube.com/vi/TKOrkjfdIXg/hqdefault.jpg'"
-               alt="MistyPilot video demo"
-               style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;">
-          <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
-                      width:68px; height:48px; background:#ff0000; border-radius:10px;
-                      display:flex; align-items:center; justify-content:center;">
-            <div style="width:0; height:0; border-style:solid; border-width:10px 0 10px 20px;
-                        border-color:transparent transparent transparent #fff; margin-left:4px;"></div>
-          </div>
-        </a>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/OKE5iTj1rQU?rel=0"
+                  title="MistyPilot: Enabling Social-Robot Control through Multi-Agent LLM Skill Orchestration"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen></iframe>
+        </div>
       </div>
     </div>
     <!--/ Video Demo. -->
